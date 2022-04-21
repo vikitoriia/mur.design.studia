@@ -1,0 +1,53 @@
+.mr-section-start{
+  background: #fff;
+  padding: 75px 0 50px;
+
+  .mr-title{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .mr-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .mr-information{
+      max-width: 930px;
+      min-width: 929px;
+
+      .mr-img-number{
+        width: 150px;
+      }
+
+      .mr-title{
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        color: #0B0B0B;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      .mr-subtitle{
+        p{
+          font-family: 'Roboto Mono';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 17.9806px;
+          line-height: 1.2;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.015em;
+          color: #1C1C1C;
+        }
+      }
+    }
+  }
+
+  .mr-items + .mr-items{
+    margin-top: 75px;
+  }
+}

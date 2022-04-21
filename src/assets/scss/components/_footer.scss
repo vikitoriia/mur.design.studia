@@ -1,0 +1,56 @@
+.mr-footer{
+  padding: 150px 0 0;
+  background: #fff;
+
+  .mr-contact{
+    margin-bottom: 270px;
+    .mr-title{
+      font-family: 'Russo One';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 61px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      color: #0B0B0B;
+    }
+
+    .mr-contact-methods{
+      a{
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: #0B0B0B;
+        text-align: right;
+        display: block;
+        transition: 0.3s;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+
+        &:after{
+          content: "";
+          display: block;
+          height: 2px;
+          width: 100%;
+          background: linear-gradient(to right, #F10000 , #EDD500, #30EF00, #00C6F1, #0053F3, #B200F1, #EC0055);
+          margin-top: 6px;
+        }
+      }
+
+      a+a{
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .mr-section-footer{
+    display: flex;
+    justify-content: center;
+    padding: 1380px 0 45px;
+    background: url(../img/footer-bg.svg) no-repeat 100%;
+  }
+}

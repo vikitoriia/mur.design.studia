@@ -1,0 +1,73 @@
+.mr-section-about{
+  background: #000 url(../img/about-bg.png) no-repeat 100%;
+  padding: 0 0 95px;
+  position: relative;
+
+  &:after{
+    content: "";
+    display: block;
+    height: 323px;
+    width: 350px;
+    background: url(../img/about-star.svg) no-repeat 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .mr-top-decoration{
+    border-bottom: 1px solid #fff;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .mr-left-decoration{
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+
+      svg+svg{
+        margin-left: 15px;
+      }
+    }
+
+    .mr-right-decoration{
+      display: flex;
+      margin-right: 15px;
+
+      svg:first-child{
+        margin-top: 18px;
+      }
+
+      svg+svg{
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .mr-about-img{
+    margin-top: 50px;
+
+    &__sk{
+      margin-top: 120px;
+    }
+  }
+
+  .mr-description{
+    margin-top: 150px;
+
+    p{
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    p+p{
+      margin-top: 45px;
+    }
+  }
+}

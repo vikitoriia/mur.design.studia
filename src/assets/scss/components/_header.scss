@@ -1,0 +1,55 @@
+.mr-header {
+    background: #fff;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mr-contact{
+        a{
+            font-family: 'Russo One',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.015em;
+            color: #7D7D7D;
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .mr-language{
+        .active{
+            font-family: 'Russo One', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 1.2;
+            letter-spacing: 0.015em;
+            color: #0B0B0B;
+            border-bottom: 2px solid #0B0B0B;
+        }
+
+        a{
+            font-family: 'Russo One', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.015em;
+            color: #7D7D7D;
+            transition: 0.3s;
+
+            &:hover{
+                color: #0B0B0B;
+            }
+        }
+
+        a+a{
+            margin-left: 18px;
+        }
+    }
+}

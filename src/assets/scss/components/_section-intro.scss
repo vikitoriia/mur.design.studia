@@ -1,0 +1,223 @@
+.mr-section-intro{
+  background: #FFF;
+  padding: 250px 0 100px;
+
+  .mr-title{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 74px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0B0B0B;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    .mr-after{
+      display: inline-block;
+      cursor: pointer;
+
+      &:after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 430px;
+        background: linear-gradient(to right, #F10000 , #EDD500, #30EF00, #00C6F1, #0053F3, #B200F1, #EC0055);
+        margin-top: 6px;
+      }
+
+      &__short{
+        transition: 0.4s;
+
+        &:after{
+          content: "";
+          display: block;
+          height: 2px;
+          width: 130px;
+          background: linear-gradient(to right, #F10000 , #EDD500, #30EF00, #00C6F1, #0053F3, #B200F1, #EC0055);
+          margin-top: 6px;
+        }
+
+        &:before{
+          content: "";
+          display: none;
+          width: 660px;
+          height: 227px;
+          background: url("../img/intro-first.svg") no-repeat;
+          position: absolute;
+          left: -145px;
+          top: 200px;
+          z-index: -1;
+          transition: 0.4s;
+        }
+
+        &:hover{
+          transition: 0.4s;
+          &:before{
+            display: block;
+            transition: 0.4s;
+          }
+        }
+      }
+
+      &__sk{
+        &:after{
+          content: "";
+          display: block;
+          height: 2px;
+          width: 500px;
+          background: linear-gradient(to right, #F10000 , #EDD500, #30EF00, #00C6F1, #0053F3, #B200F1, #EC0055);
+          margin-top: 6px;
+        }
+      }
+
+      &__short-sk{
+        &:after{
+          content: "";
+          display: block;
+          height: 2px;
+          width: 230px;
+          background: linear-gradient(to right, #F10000 , #EDD500, #30EF00, #00C6F1, #0053F3, #B200F1, #EC0055);
+          margin-top: 6px;
+        }
+
+        &:before{
+          content: "";
+          display: none;
+          width: 660px;
+          height: 227px;
+          background: url("../img/intro-first-sk.svg") no-repeat;
+          position: absolute;
+          left: -145px;
+          top: 200px;
+          z-index: -1;
+          transition: 0.4s;
+        }
+
+        &:hover{
+          transition: 0.4s;
+          &:before{
+            display: block;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+
+  .mr-subtitle{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #1C1C1C;
+    text-align: center;
+    margin: 10px 0 60px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .mr-button-contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 175px;
+    position: relative;
+    z-index: 10;
+
+    a{
+      font-family: 'Russo One';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 1;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+      padding: 17px 25px;
+      background: #BD3421;
+      transition: 0.3s;
+
+      &:hover{
+        background: #0B0B0B;
+      }
+
+      &:active{
+        color: #BD3421;
+        background: #FFF;
+        border: 4px solid #BD3421;
+      }
+
+      &:disabled{
+        color: #7D7D7D;
+        background: #fff;
+        border: 4px solid #7D7D7D;
+      }
+    }
+  }
+
+  .mr-button-portfolio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    a{
+      img{
+        position:relative;
+        transition: 0.3s;
+      }
+
+      .mr-img-circle{
+        position: absolute;
+        top: -108%;
+        right: 45%;
+
+        animation: rotate 5s infinite linear;
+      }
+
+      @keyframes rotate {
+        0%{
+          transform: rotate(0deg);
+        }
+        10%{
+          transform: rotate(36deg);
+        }
+        20%{
+          transform: rotate(72deg);
+        }
+        30%{
+          transform: rotate(108deg);
+        }
+        40%{
+          transform: rotate(144deg);
+        }
+        50%{
+          transform: rotate(180deg);
+        }
+        60%{
+          transform: rotate(216deg);
+        }
+        70%{
+          transform: rotate(252deg);
+        }
+        80%{
+          transform: rotate(288deg);
+        }
+        90%{
+          transform: rotate(324deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+
+      &:hover{
+        img{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
